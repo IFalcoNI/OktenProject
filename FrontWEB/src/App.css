@@ -1,0 +1,232 @@
+body {
+    background-color: #24252A;
+}
+
+header, footer {
+    width: 100%;
+    height: 60px;
+    background-color: #191d1f;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    color: #424242;
+}
+
+/*Clases*/
+.Logo {
+    display: inherit;
+    margin-right: auto;
+}
+
+.HeaderNavBar {
+    float-displace: 100px;
+}
+
+.HeaderNavList {
+    display: table;
+    list-style-type: none;
+    margin: 0;
+}
+
+.Form {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: shadow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.PassAcc {
+    width: 80%;
+    font-size: 10px;
+    margin: 0 auto;
+    color: #717171;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20px;
+}
+
+@keyframes shadow {
+    0% {
+        -webkit-box-shadow: 0px 0px 300px -66px rgba(48, 255, 197, 1);
+        -moz-box-shadow: 0px 0px 300px -66px rgba(48, 255, 197, 1);
+        box-shadow: 0px 0px 300px -66px rgba(48, 255, 197, 1);
+    }
+    50% {
+
+        -webkit-box-shadow: 0px 0px 300px -22px rgba(48, 255, 197, 1);
+        -moz-box-shadow: 0px 0px 300px -22px rgba(48, 255, 197, 1);
+        box-shadow: 0px 0px 300px -22px rgba(48, 255, 197, 1);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 300px -66px rgba(48, 255, 197, 1);
+        -moz-box-shadow: 0px 0px 300px -66px rgba(48, 255, 197, 1);
+        box-shadow: 0px 0px 300px -66px rgba(48, 255, 197, 1);
+    }
+}
+
+/*IDs*/
+#logoImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid #30ffc5;
+    animation-name: DottedSpin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes DottedSpin {
+    0% {
+        border-color: rgba(127, 255, 212, 0.5);
+    }
+    50% {
+        border-color: #30ffc5
+    }
+    100% {
+        border-color: rgba(127, 255, 212, 0.5)
+    }
+}
+
+#logoName {
+    font-size: 25px;
+    margin: auto 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #30ffc5;
+}
+
+#NavList, #NavListSignIn, #List {
+    color: white;
+    width: 120px;
+    height: 60px;
+    margin-left: 10px;
+    font-size: 15px;
+    transition: all .3s;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+#NavList:hover, #NavListSignIn:hover {
+    background-color: #151515;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#NavListSignIn {
+    color: #30ffc5;
+}
+
+#NavListSignIn:hover {
+    color: #00ffbb;
+}
+
+#LogInOut {
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: aqua;
+}
+
+#sign {
+    text-align: center;
+    color: #30ffc5;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#FormInput {
+    width: 80%;
+    height: 30px;
+    margin: 10px auto;
+    background-color: #2e2f34;
+    border: none;
+    color: white;
+}
+
+#FormInput:focus, textarea:focus {
+    outline-color: #30ffc5;
+}
+
+#FormSubmit {
+    width: 30%;
+    height: 30px;
+    margin: 15px auto;
+    font-weight: bold;
+    background-color: #30ffc5;
+    outline: none;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+#FormSubmit:hover {
+    background-color: #27bc96;
+}
+
+#FormSubmit:active {
+    background-color: aquamarine;
+}
+
+#Rights {
+    margin-top: 75px;
+    width: 100%;
+    height: 20px;
+}
+
+#SocialMediaIcons {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+#password, #email, #username {
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    font-size: 20px;
+}
+
+#forlink, #noAcc {
+    text-decoration: none;
+    color: #00ffbb;
+    width: 80%;
+    margin: 5px auto;
+    font-size: 10px;
+}
+
+#forlink {
+    margin-right: 36px;
+}
+
+/*/////////////////////////////////*/
+#large {
+    width: 100%;
+    color: #00ffbb;
+    min-height: calc(100vh - 160px);
+}
+
+/*/////////////////////////////////*/
